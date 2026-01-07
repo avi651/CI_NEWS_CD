@@ -1,0 +1,6 @@
+framework module Pods_CINewsCDTests {
+  umbrella header "Pods-CINewsCDTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
