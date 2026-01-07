@@ -96,7 +96,6 @@
 				FE8963428D144BC7A55CFC1F /* Pods-CINewsCDTests.debug.xcconfig */,
 				D4D7B3671C6A974CCD2D4E87 /* Pods-CINewsCDTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
