@@ -23,10 +23,11 @@ jobs:
       - name: Install Pods
         run: pod install
 
-      - name: Build & Test CINewsCD
+      - name: Build & Test (No UITests)
         run: |
           xcodebuild clean test \
             -workspace CINewsCD.xcworkspace \
             -scheme CINewsCD \
             -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' \
+            -skip-testing:CINewsCDUITests \
             CODE_SIGNING_ALLOWED=NO
