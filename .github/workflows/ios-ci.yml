@@ -37,3 +37,19 @@ jobs:
             -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' \
             -skip-testing:CINewsCDUITests \
             CODE_SIGNING_ALLOWED=NO
+
+      - name: Zip App Build
+        run: |
+          mkdir -p artifacts
+          APP_PATH=$(find ~/Library/Developer/Xcode/DerivedData -name "CINewsCD.app" | head -n 1)
+          if [ -z "$APP_PATH" ]; then
+            echo "App not found!"
+            exit 1
+          fi
+          zip -r artifacts/CINewsCD.app.zip "$APP_PATH"
+
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: CINewsCD-build
+          path: artifacts/CINewsCD.app.zip
