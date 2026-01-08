@@ -2,16 +2,16 @@ name: iOS CI (CocoaPods)
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   build:
     runs-on: macos-14
 
     steps:
-       - name: Checkout code
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Select Xcode
