@@ -21,7 +21,7 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 [bundle exec] fastlane ios build_only
 ```
 
-Fake CD: Build app WITHOUT code signing
+Fake CD: Build app with auto-incremented build number
 
 ----
 

@@ -16,8 +16,13 @@
 default_platform(:ios)
 
 platform :ios do
-  desc "Fake CD: Build app WITHOUT code signing"
+  desc "Fake CD: Build app with auto-incremented build number"
   lane :build_only do
+
+    increment_build_number(
+      xcodeproj: "CINewsCD.xcodeproj"
+    )
+
     build_app(
       workspace: "CINewsCD.xcworkspace",
       scheme: "CINewsCD",
