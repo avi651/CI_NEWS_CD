@@ -1,1 +1,2 @@
 echo "config.json" >> .gitignore
+config.json

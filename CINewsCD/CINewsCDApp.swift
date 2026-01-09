@@ -9,6 +9,10 @@ import SwiftUI
 
 @main
 struct CINewsCDApp: App {
+    
+    init() {
+        APIKeyManager.shared.setupAPIKey()
+    }
     var body: some Scene {
         WindowGroup {
             ContentView()
