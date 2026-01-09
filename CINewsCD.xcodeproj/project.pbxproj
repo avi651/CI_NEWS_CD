@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5E0502DF1C60034810D3F92D /* Pods_CINewsCDUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D696631F666CCB56E3F99D /* Pods_CINewsCDUITests.framework */; };
 		D0D603A7F6C2454973E5F7FD /* Pods_CINewsCD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5439173BCAC6F1DC58345E09 /* Pods_CINewsCD.framework */; };
+		E146B5F72F118184002D30D2 /* KeyChainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E146B5F62F118184002D30D2 /* KeyChainHelper.swift */; };
 		E169FB282F0EE29D006D703E /* CINewsCDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E169FB272F0EE29D006D703E /* CINewsCDApp.swift */; };
 		E169FB2A2F0EE29D006D703E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E169FB292F0EE29D006D703E /* ContentView.swift */; };
 		E169FB2C2F0EE2A1006D703E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E169FB2B2F0EE2A1006D703E /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		64D696631F666CCB56E3F99D /* Pods_CINewsCDUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CINewsCDUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B2275FCE99D05F73B1E02E /* Pods-CINewsCDUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CINewsCDUITests.release.xcconfig"; path = "Target Support Files/Pods-CINewsCDUITests/Pods-CINewsCDUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D14A36665393F6D3F4A1DD7D /* Pods-CINewsCD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CINewsCD.debug.xcconfig"; path = "Target Support Files/Pods-CINewsCD/Pods-CINewsCD.debug.xcconfig"; sourceTree = "<group>"; };
+		E146B5F62F118184002D30D2 /* KeyChainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainHelper.swift; sourceTree = "<group>"; };
 		E169FB242F0EE29D006D703E /* CINewsCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CINewsCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E169FB272F0EE29D006D703E /* CINewsCDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CINewsCDApp.swift; sourceTree = "<group>"; };
 		E169FB292F0EE29D006D703E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,6 +105,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E146B5F52F118169002D30D2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E146B5F62F118184002D30D2 /* KeyChainHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		E169FB1B2F0EE29D006D703E = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +138,7 @@
 		E169FB262F0EE29D006D703E /* CINewsCD */ = {
 			isa = PBXGroup;
 			children = (
+				E146B5F52F118169002D30D2 /* Helper */,
 				E169FB272F0EE29D006D703E /* CINewsCDApp.swift */,
 				E169FB292F0EE29D006D703E /* ContentView.swift */,
 				E169FB2B2F0EE2A1006D703E /* Assets.xcassets */,
@@ -359,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E146B5F72F118184002D30D2 /* KeyChainHelper.swift in Sources */,
 				E169FB2A2F0EE29D006D703E /* ContentView.swift in Sources */,
 				E169FB282F0EE29D006D703E /* CINewsCDApp.swift in Sources */,
 			);
