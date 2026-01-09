@@ -8,13 +8,7 @@
 import SwiftUI
 
 @main
-struct CINewsCDApp: App {
-    init() {
-        // 🔐 API key ko Keychain me save karo (1st launch)
-        guard let apiKey = KeychainHelper.shared.read(for: "news_api_key") else {
-            fatalError("API key missing")
-        }
-    }
+struct CINewsCDApp: App {Ï
     var body: some Scene {
         WindowGroup {
             ContentView()
